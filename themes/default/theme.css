@@ -1,0 +1,727 @@
+/*
+  Specaly For portalzzzz
+  Desinged by : DEDLI
+  Discord: dedli22
+  Skype: dedli22
+  Style version: 0.1
+*/
+
+
+/* news lapa */
+#newsContainer {
+    width: 79%;
+    float: left;
+    margin-top: 5px;
+    background-color: #FFF;
+}
+
+#newsContainer .newsContent {
+    float: left;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    border:#019ad2 1px solid;
+    border-radius: 5px;
+}
+
+#newsContainer .newsTitle {
+    font-size: 40px;
+    font-family: Tahoma;
+    font-weight: bold;
+    color: #014560;
+    text-align: left;
+}
+
+#newsContainer .newsArticle {
+    padding: 20px 15px;
+    color: #333333;
+    min-height: 200px;
+
+}
+
+#newsContainer .newsImage{
+    width: 328px;
+    height: 248px;
+   
+    float: right;
+    margin-top: 20px 0;
+    position: relative;
+}
+
+#newsContainer .read_more {
+    
+    position:relative;
+    bottom: 0px;
+    box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	background-color:#33bdef;
+	border-radius:6px;
+	border:1px solid #057fd0;	
+	cursor:pointer;
+	color:#ffffff;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+    float: left;    
+}
+
+#newsContainer .read_more:hover {
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+}
+#newsContainer .read_more:active {
+	position:relative;
+	top:1px;
+}
+
+/* Lapu sadalītājs  */
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+/* test edit news table  */
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 97.5%;
+    text-align: center;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 4px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+/* left side */
+#newsContainer .service_box_left {
+    float: left;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #019ad2;
+    border-radius: 4px;
+
+}
+
+#newsContainer .service_box_left h3{
+    font-size: 40px;
+    font-family: Tahoma;
+    font-weight: bold;
+    color: #014560;
+
+}
+
+#newsContainer .service_box_left .left_side{
+    float: left;
+    width: 95%;
+    
+}
+
+
+#newsContainer .service_box_left .box_info .newsImg{
+    width: 50%;
+    float: right;
+    margin-top: 20px 0;
+}
+
+#newsContainer .service_box .read_more {
+    width: 40%;
+    margin: 20px;
+    float: left;
+}
+
+#newsContainer .read_more {
+    box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	background-color:#33bdef;
+	border-radius:6px;
+	border:1px solid #057fd0;	
+	cursor:pointer;
+	color:#ffffff;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+    float: left;
+    
+}
+
+#newsContainer .read_more:hover {
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+}
+#newsContainer .read_more:active {
+	position:relative;
+	top:1px;
+}
+
+/* Pagaidu admin panelis  */
+#acpContainer {
+    width: 79%;
+    float: left;
+    margin-top: 5px;
+    background-color: #FFF;
+}
+
+#acpContainer .pageTitle {
+    color: #0777a7;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin: 5px;
+}
+
+#acpContainer .pageTitleUnderline {
+    width: 65%;
+    color: #0777a7;
+    margin-left: 3px;
+}
+
+#acpContainer .acpContnet {
+    float: left;
+    padding: 5px;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+    color: #0676a3;
+    margin-top: 20px;
+}
+
+#acpContainer .acpContentTitle { 
+    font-size: 14px;
+    font-weight: bold;
+    color: #33b3cf;
+    padding-left: 15px;
+}
+
+#acpContainer .acpConentButton {
+    padding: 5px;
+    width: 140px;
+    margin: 8px;
+    margin-top: 20px;
+    float: left;
+}
+
+#acpContainer .acpConentButton a {
+    text-decoration: none;
+    color: #056289;
+}
+
+/* 
+
+padding: 5px; 
+background: #fff; 
+border: 1px solid #ccc; 
+width: 137px">
+<center>
+<img 
+
+border="0" 
+height="10px" 
+src="/ikonas/add.png">
+<a style="padding: 10%;" 
+href="/?acp=news&add=news">
+Pievienot Jaunumus</a></center></div></div>
+
+*/
+
+#page_off .page_off a {
+    text-decoration:none;
+    color: white;
+}
+body { 
+background-color: #E84C3D; 
+text-align: center; 
+padding: 150px;
+text-decoration:none;
+}
+h1 { 
+font-size: 50px; }
+body  { 
+font: 20px Helvetica, sans-serif; 
+}
+#img360 {
+border-radius: 100px;
+margin-left: 0px;
+-webkit-animation:spin 4s linear infinite;
+-moz-animation:spin 4s linear infinite;
+animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+
+/* Lapa */
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	height:100%;
+}
+
+body {
+	background:#CCC url('') repeat-y center !important;
+	width:1050px;
+    	margin:0 auto;
+	border:0;
+	font-family:Tahoma;
+	font-size:9pt;
+	padding-top:15px;	
+	height:100%;
+}
+
+
+/* login panelis */
+    #login_wrapper {
+        position:absolute;
+		top:300px;
+		left:50%;
+		margin-top:-82px;
+		margin-left: -150px; /*set to a negative number 1/2 of your width */
+        width:300px;
+		height:165px;
+	 
+    }
+    
+    #login {
+        font-family: Tahoma;
+        text-align: center;
+    }
+    
+    #login a {
+        color: #555;
+        text-decoration: none;
+        font-size: 11px;
+    }
+    
+    #login a:hover {
+        text-decoration:underline;
+    }
+
+    .headline {
+        font-size: 24px;
+        color:#555;
+        margin-bottom: 10px;
+    }
+    
+    fieldset {
+        
+        border:1px solid #999;
+        border-radius: 5px;
+        padding:10px;
+        box-shadow: 0px 0px 3px 2px rgba(200,200,200, 0.3);
+    }
+    
+     input  {
+        border:1px solid #bbb;
+        border-radius: 5px;
+        padding:6px 8px;
+        width:100%;
+        color:#555;
+        font-size:11px;
+        box-shadow: 1px 1px 3px 2px rgba(200,200,200, 0.2) inset;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        margin-bottom: 5px;
+        color:#999;
+		width:150px;
+    }
+
+    input[type="submit"] {
+        border-color: #999;
+        cursor: pointer;
+        background: -webkit-linear-gradient(top, white, #E0E0E0);
+        background:    -moz-linear-gradient(top, white, #E0E0E0);
+        background:     -ms-linear-gradient(top, white, #E0E0E0);
+        background:      -o-linear-gradient(top, white, #E0E0E0);
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 0 3px #fff;
+        -moz-box-shadow:    0 1px 2px rgba(0,0,0,0.25), inset 0 0 3px #fff;
+        box-shadow:         0 1px 2px rgba(0,0,0,0.25), inset 0 0 3px #fff;
+        margin-top: 5px;
+    }
+ 
+
+
+#container {
+	width: 1030px; 
+	background: #ebebeb;
+	margin: auto;
+	overflow: hidden;
+	border-radius:6px;
+}
+
+/* Logo */
+#logo {
+	width: 156px; 
+	background: url(img/small_logo.png);
+	height: 31px;
+	float: left;
+	overflow: hidden;
+}
+
+/* Augseja mala */
+#top_warp_left {
+	float: left; 
+	margin-top: 10px; 
+	width: 700px;
+}
+
+#top_wrap_right {
+	float: left; 
+	width: 150px; 
+	margin-top: 10px; 
+	text-align: right;
+}
+
+/* Navigacija */
+#navigation {
+background:#33b3cf url('img/menu.png');
+	text-align: center;
+	margin: 0;
+	height: 27px;
+	overflow: hidden;
+	width: 1030px;
+
+}
+#navigation ul {
+	height: 25px;
+	line-height: 25px; 
+	margin: 0;
+	padding: 2;
+	text-transform: capitalize;
+	background: url('img/nav_bg.png');
+}
+
+#navigation li {
+	height: 25px;
+	line-height: 25px;
+	display: inline;
+	float: left; 
+	width: auto; 
+	text-align: center;
+	margin: 0px;
+	text-transform: capitalize;
+	background: url('img/nav_bg.png');
+}
+
+#navigation li a {
+	display:block; 
+	border-right: 1px solid #0676a3;
+	float:left; 	
+	background:#33b3cf url('img/nav_bg.png');
+	width:71.3px;
+	color: #eee;
+	text-decoration:none;
+	font-weight: bolder; 
+
+}
+#navigation li ul a {
+background: #0777a7;
+margin-left: -1px;
+}
+
+#navigation li ul a:hover{
+background: #056289;
+}
+
+#navigation li a:link,
+#navigation li a:visited
+{
+	text-decoration:none;
+}
+
+#navigation li a:hover {
+	text-decoration:none;
+	background: transparent url(img/nav_bg_hover.png);
+}
+
+/* Sub navigacija */
+#navigation2 {
+	background: #fff;
+	text-align: center;
+	margin: 0;
+	height: 23px;
+	overflow: hidden;
+	width: 970px;
+	border: 1px solid #ccc;
+	border-top: none;
+	margin: auto;
+	-moz-border-radius-bottomleft:6px;
+	-moz-border-radius-bottomright:6px;
+
+}
+
+#navigation2 a {
+	display:block; 
+	border-right: 1px solid #eee;
+	float:left;
+	margin-left: 5px;
+	padding-right: 5px;
+	color: #737373;
+	text-decoration:none;
+	font-weight: bolder; 
+	height: 18px;
+	padding-top: 5px;
+}
+
+/* kreisais panelis */
+#left-panel {
+	float: left;
+	width: 190px;
+	padding: 5px;
+	margin: 4px;
+	background: #fff;
+	border: 1px solid #ccc;
+	height:500px;
+	min-height:100%;
+}
+
+#left-panel .img {
+	 float: left;
+	 width: 154px;
+	 max-height:300px;
+}
+
+#left-panel .content {
+	float: left; 
+	width: 182px;
+	padding: 3px;  
+	background: #eee; 
+	border: 1px solid #ccc;
+}
+
+/* Centra panelis */
+#center-panel {
+	float: left;
+	width: 570px;
+
+	margin: 4px;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+#center-panel-link {
+	margin-left:5px;
+	margin-right:5px;
+	padding-bottom:2px;
+	padding-top:2px;
+	border-bottom: 1px solid #eee;
+	border-left:1px solid #eee;
+	border-right:1px solid #eee;
+}
+
+#center-panel .link1 {
+	margin-left: 5px;
+	color: #737373; 
+	text-decoration: none; 
+	border-right: 1px solid #eee; 
+	padding-right: 5px;
+}
+
+#center-panel .link2 {
+	padding-right: 5px;
+	border-right: 1px solid #eee;
+	margin-left: 5px; 
+	color: #737373; 
+	text-decoration: none;
+}
+
+#center-panel-text {
+	padding: 5px;
+	margin: 4px;
+}
+
+#center-panel .kolona {
+	width: 85px; 
+	margin: 0px; 
+	text-align: center; 
+	float: left;
+}
+
+/* Labais panelis */
+#right-panel {
+	float: right;
+	width: 220px;
+	height:500px;
+	padding: 5px;
+	margin: 4px;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+#right-panel .search {
+	width: 120px; 
+	padding-left: 10px; 
+	margin-right: 4px; 
+	height: 14px;  
+	font-size: 11px;
+	font-family: arial; 
+	float: left; 
+	border: 1px solid #ccc;
+	margin-top: 2px;
+}
+
+#right-panel .serch-submit {
+	border: 1px solid #ccc; 
+	padding: 4px;
+}
+
+/* Centra panelis Profils */
+#center-panel_profile {
+	float: left;
+	width: 770px;
+	padding:5px;
+	margin-top: 4px;
+    margin-right:4px;
+    margin-left:4px;
+	background: #fff;
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+}
+
+#center-panel_profile-link {
+	margin-left:5px;
+	margin-right:5px;
+	padding-bottom:2px;
+	padding-top:2px;
+	border-bottom: 1px solid #eee;
+	border-left:1px solid #eee;
+	border-right:1px solid #eee;
+}
+
+#center-panel_profile .link1 {
+	margin-left: 5px;
+	color: #737373; 
+	text-decoration: none; 
+	border-right: 1px solid #eee;
+	padding-right: 5px;
+}
+
+#center-panel_profile .link2 {
+	padding-right: 5px;
+	border-right: 1px solid #eee;
+	margin-left: 5px; 
+	color: #737373; 
+	text-decoration: none;
+}
+
+#center-panel_profile-text {
+	padding: 5px;
+	margin: 4px;
+}
+
+#center-panel_profile .kolona {
+	width: 85px; 
+	margin: 5px; 
+	text-align: center; 
+	float: left;
+}
+
+#center-panel_profile .top_profile_text_left {
+	padding-top:10px;
+	padding-left:25px;
+	float: left;
+}
+
+#center-panel_profile .top_profile_text_right {
+	padding-top:10px;
+	padding-right:25px;
+	float: right;
+}
+
+/* Centra panelis kad lietotajs to skatas */
+#center-panel_active {
+	float: left;
+	width: 570px;
+	padding-top:0px;
+    margin-left:4px;
+    margin-right:4px;
+	background: #fff;
+    border-top:1px solid #FFF;
+    border-right:1px solid #CCC;
+    border-left:1px solid #CCC;
+    border-bottom:1px solid #CCC;
+
+}
+
+#center-panel_active .text {
+  margin:5px;
+}
+
+#center-panel-messages {
+	float: left;
+	width: 810px;
+
+	margin: 4px;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+input.msg {
+    width:50px;
+}
+
+/* footers - apakseja mala - atsauces  */
+#footer {
+	width: 1030px;
+	height: 40px;
+	background: #888;
+	border-top: 1px solid #b8b8b8;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+#footer .text-left {
+	float: left; 
+	margin-left: 40px; 
+	margin-top: 15px;
+}
+
+#footer .text-right {
+	float: right; 
+	margin-left: 40px; 
+	margin-top: 15px;
+}
+
+
+
