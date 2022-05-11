@@ -3,7 +3,7 @@
 // Main page configuration 
 $pageConfig = [
     'page_name' => 'Social portāls',
-    'page_url' => 'http://localhost/hosts/project/portal_v2/',
+    'page_url' => 'http://localhost/hosts/project/portal_v2/Portal/',
     'page_offline' => false,
     'page_offlineMsg' => 'Sorry we\'re down for maintenance.!',
     'page_version' => '0.1',
@@ -13,8 +13,8 @@ $pageConfig = [
 
 // Database  configuration
    define('DB_SERVER', 'localhost');
-   define('DB_USERNAME', '');
-   define('DB_PASSWORD', 'root');
+   define('DB_USERNAME', 'root');
+   define('DB_PASSWORD', '');
    define('DB_DATABASE', 'portal');
    define('DB_CHARSET', 'utf8mb4');
 

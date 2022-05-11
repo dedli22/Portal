@@ -392,10 +392,10 @@ require_once ('config/core.php');
                                        
                     <input type="radio" name="visible" 
                     <?php if (isset($visible) && $visible == "true") echo "checked";?>
-                    value="true"> Jā!
+                    value="1"> Jā!
                     <input type="radio" name="visible"
                     <?php if (isset($visible) && $visible == "false") echo "checked";?>
-                    value="false"> Nē!                   
+                    value="0"> Nē!                   
                    
                     <br/><br>
 
@@ -498,10 +498,10 @@ require_once ('config/core.php');
                                     <div ><b>visible</b><font color="red">*</font>:<br/></div>                        
                                     <input type="radio" name="visible" 
                                         <?php if (isset($visible) OR $data['visible'] == "true") echo "checked";?>
-                                        value="true"> Jā!
+                                        value="1"> Jā!
                                         <input type="radio" name="visible"
                                         <?php if (isset($visible) OR $data['visible'] == "false") echo "checked";?>
-                                        value="false"> Nē!    
+                                        value="0"> Nē!    
                                     
                                     <br/>
 

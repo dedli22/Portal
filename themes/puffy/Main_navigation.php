@@ -7,13 +7,19 @@
         $result = $conn->query($sql);
             if ($result->num_rows > 0 )
             {
+                
                 while ($data = $result->fetch_assoc())
                 {
-                    ?>
-                            
-                            <li><a href="<?php echo $data['link']; ?>"><?php echo $data['name']; ?></a></li>           
-                            
-                    <?php
+                    $visible = $data['visible'];
+                    if ($visible = true) 
+                    {
+                        ?>
+                        <li><a href="<?php echo $data['link']; ?>"><?php echo $data['name']; ?></a></li> 
+                        <?php
+                    }else
+                    {
+                       echo `false`;
+                    }                    
                 }
             }
         ?>
