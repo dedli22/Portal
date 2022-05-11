@@ -1,0 +1,31 @@
+
+<nav class="headerNavigation">
+    <ul>
+        <?php 
+        $conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
+        $sql = "SELECT * FROM `main_nav`";
+        $result = $conn->query($sql);
+            if ($result->num_rows > 0 )
+            {
+                while ($data = $result->fetch_assoc())
+                {
+                    ?>
+                            
+                            <li><a href="<?php echo $data['link']; ?>"><?php echo $data['name']; ?></a></li>           
+                            
+                    <?php
+                }
+            }
+        ?>
+    </ul>
+</nav>
+
+
+ <!-- <nav class="headerNavigation">
+            <ul>           
+                <li><a href="?acp">Admin</a></li>                
+                <li><a href="#">contact</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="?news">home</a></li>                
+            </ul>
+</nav> -->
