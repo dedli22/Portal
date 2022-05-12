@@ -48,9 +48,9 @@ require_once ('config/core.php');
                     <div><b>Jaunumu bilde </b><font color="red">*</font>:<br/></div>
                         <input type="text" name="photo"  value="" size="" /><br/>
                     <div ><b>Jaunumu texts </b><font color="red">*</font>:<br/></div>                        
-                        <textarea id="text" name="text" style="width:380px;height:150px;"></textarea><br/>
+                        <textarea name="text"></textarea><br/>
 
-                    <input type="submit" name="add_news" value="Nosūtīt" style="width:100px;" />
+                    <input type="submit" name="add_news" value="Nosūtīt"/>
                 </form>
             </div>
             <?php
@@ -156,9 +156,9 @@ require_once ('config/core.php');
                                     <div><b>Jaunumu bilde </b><font color="red">*</font>:<br/></div>
                                         <input type="text" name="photo"  value="<?php echo $data['photo']; ?>" size="" /><br/>
                                     <div ><b>Jaunumu texts </b><font color="red">*</font>:<br/></div>                        
-                                        <textarea id="text" name="text" style="width:380px;height:150px;"><?php echo $data['text']; ?></textarea><br/>
+                                        <textarea name="text" ><?php echo $data['text']; ?></textarea><br/>
 
-                                    <input type="submit" name="update_news" value="Labot jaunumus" style="width:100px;" />
+                                    <input type="submit" name="update_news" value="Labot jaunumus" />
                                 </form>
                             </div>                            
                         <?php
@@ -251,9 +251,9 @@ require_once ('config/core.php');
                                     <div><b>Jaunumu bilde </b><font color="red">*</font>:<br/></div>
                                         <input type="text" name="photo"  value="<?php echo $data['photo']; ?>" size="" /><br/>
                                     <div ><b>Jaunumu texts </b><font color="red">*</font>:<br/></div>                        
-                                        <textarea id="text" name="text" style="width:380px;height:150px;"><?php echo $data['text']; ?></textarea><br/>
+                                    <textarea name="text"><?php echo $data['text']; ?></textarea><br/>
 
-                                    <input type="submit" name="update_news" value="Labot jaunumus" style="width:100px;" />
+                                    <input type="submit" name="update_news" value="Labot jaunumus" />
                                 </form>
                             </div>                            
                         <?php
@@ -321,7 +321,7 @@ require_once ('config/core.php');
                                 }
                     $conn->close();
                     echo '      </select><br>
-                                <input type="submit" name="delete_news" value="Izdzēst jaunumus" style="width:200px;" />
+                                <input type="submit" name="delete_news" value="Izdzēst jaunumus" />
                             </form>
                         </div>
                         ';
@@ -399,7 +399,7 @@ require_once ('config/core.php');
                    
                     <br/><br>
 
-                    <input type="submit" name="add_mainNav" value="Nosūtīt" style="width:100px;" />
+                    <input type="submit" name="add_mainNav" value="Nosūtīt" />
                 </form>
             </div>
             <?php
@@ -575,7 +575,7 @@ require_once ('config/core.php');
                                 }
                     $conn->close();
                     echo '      </select><br>
-                                <input type="submit" name="delete_mainNav" value="Izdzēst no menu saraksta" style="width:200px;" />
+                                <input type="submit" name="delete_mainNav" value="Izdzēst no menu saraksta" />
                             </form>
                         </div>
                         ';
@@ -646,9 +646,9 @@ require_once ('config/core.php');
                     <div><b>To do lista bilde </b><font color="red">*</font>:<br/></div>
                         <input type="text" name="photo"  value="" size="" /><br/>
                     <div ><b>To do lista texts </b><font color="red">*</font>:<br/></div>                        
-                        <textarea id="text" name="text" style="width:380px;height:150px;"></textarea><br/>
+                    <textarea name="text"></textarea><br/>
 
-                    <input type="submit" name="add_todolist" value="Nosūtīt" style="width:100px;" />
+                    <input type="submit" name="add_todolist" value="Nosūtīt" />
                 </form>
             </div>
             <?php
@@ -746,9 +746,9 @@ require_once ('config/core.php');
                                     <div><b>To do lista bilde </b><font color="red">*</font>:<br/></div>
                                         <input type="text" name="photo"  value="<?php echo $data['photo']; ?>" size="" /><br/>
                                     <div ><b>to do Lista teksts</b><font color="red">*</font>:<br/></div>                        
-                                        <textarea id="text" name="text" style="width:97.5%;height:260px;"><?php echo $data['text']; ?></textarea><br/>
+                                        <textarea name="text"><?php echo $data['text']; ?></textarea><br/>
 
-                                    <input type="submit" name="update_todolist" value="Labot to do listu" style="width:100px;" />
+                                    <input type="submit" name="update_todolist" value="Labot to do listu" />
                                 </form>
                             </div>                            
                         <?php
