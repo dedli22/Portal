@@ -21,3 +21,4 @@ Just inport portal.sql file in database.
   - Fixed main navigation admin panel visiblle function
   - Updated form styles 
   - Fixed Page offline redirect 
+  - Added news text limit 
