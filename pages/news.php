@@ -17,17 +17,13 @@ if ($_GET['item'])
                                 </div>                 
                                 <img class="newsImage" src="<?php echo $row['photo'] ?>"/>
                                 <div class="newsArticle">
-                                    <?php echo $row['text'] ?>             
+                                    <?php echo $row['text']; ?>             
                                 </div>          
                             </div>
                         <?php                 
                         }
                     $conn->close();
-                }else {
-                
-                    // To Do List lapa
-                    include ('pages/toDoList.php');
-
+                }else {                
 
                     //database connection  
                     $conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);  
@@ -64,7 +60,7 @@ if ($_GET['item'])
                     $page_first_result = ($page-1) * $results_per_page;  
                 
                     //retrieve the selected results from database   
-                    $query = "SELECT * FROM news ORDER BY `news_id` DESC LIMIT " . $page_first_result . ',' . $results_per_page; 
+                    $query = "SELECT * FROM news ORDER BY `news_id`  DESC LIMIT " . $page_first_result . ',' . $results_per_page;
                     $result = mysqli_query($conn, $query);  
                     
                     //display the retrieved result on the webpage  
@@ -77,7 +73,7 @@ if ($_GET['item'])
                         </div>                 
                         <img class="newsImage" width="328px" height="248px" alt="News Image" src="<?php echo $row['photo'] ?>"/>
                         <div class="newsArticle">
-                            <?php echo $row['text'] ?>             
+                            <?php echo substr_replace($row['text'], "...", 1000); ?>             
                         </div>                
                         <button class="read_more" onclick="location.href='?news&item=<?php echo $row['news_id'] ?>'" type="submit" value="Lasīt vairāk...">
                             Lasīt vairāk...
