@@ -3,7 +3,7 @@
     <ul>
         <?php 
         $conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
-        $sql = "SELECT * FROM `main_nav`";
+        $sql = "SELECT * FROM `main_nav` ORDER BY `link_order` DESC";
         $result = $conn->query($sql);
             if ($result->num_rows > 0 )
             {
@@ -27,11 +27,3 @@
 </nav>
 
 
- <!-- <nav class="headerNavigation">
-            <ul>           
-                <li><a href="?acp">Admin</a></li>                
-                <li><a href="#">contact</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="?news">home</a></li>                
-            </ul>
-</nav> -->

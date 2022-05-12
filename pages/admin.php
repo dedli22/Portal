@@ -439,7 +439,7 @@ require_once ('config/core.php');
                                 <th>ID</th>
                                 <th>Nosaukums</th>                                
                                 <th>Links</th>                               
-                                <th>Redzamiba</th>
+                                <th>Redzamiba</th>                                
                                 <th>Pievienoja</th>                                                            
                                 <th>Darbība</th>
                             </tr>                        
@@ -458,7 +458,7 @@ require_once ('config/core.php');
                                         <td>' . $data['nav_id'] . '</td>
                                         <td>' . $data['name'] . '</td>
                                         <td>' . $data['link'] . '</td>                                       
-                                        <td>' . $data['visible'] . '</td>                                         
+                                        <td>' . $data['visible'] . '</td>                                        
                                         <td>' . $data['added_by'] . '</td>
                                         <td>
                                             
@@ -480,18 +480,16 @@ require_once ('config/core.php');
                     {
                         $item = intval($_GET['item']);
                         $conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);            
-                        $sql =  "SELECT `nav_id`, `name`, `link`, `visible` FROM `main_nav` WHERE `nav_id` = '".$item."'";
+                        $sql =  "SELECT `nav_id`, `name`, `link`, `visible`, `link_order` FROM `main_nav` WHERE `nav_id` = '".$item."'";
                         $result = $conn->query($sql);
                         if ($result->num_rows > 0) 
                             {
                                 while ($data = $result->fetch_assoc()) 
                                 {
-
-                        ?>
+                        ?>                        
                             <div class="acpContnet">
                                 <form action="" method="post">
-                                    <?php echo $error_test; ?>
-                                    <div><b>Linka nosaukums </b><font color="red">*</font>:<br/></div>
+                                   <div><b>Linka nosaukums </b><font color="red">*</font>:<br/></div>
                                         <input type="text" name="name"  value="<?php echo $data['name']; ?>" size="" /><br/>
                                     <div><b>Links </b><font color="red">*</font>:<br/></div>
                                         <input type="text" name="link"  value="<?php echo $data['link']; ?>" size="" /><br/>
@@ -501,8 +499,10 @@ require_once ('config/core.php');
                                         value="1"> Jā!
                                         <input type="radio" name="visible"
                                         <?php if (isset($visible) OR $data['visible'] == "false") echo "checked";?>
-                                        value="0"> Nē!    
-                                    
+                                        value="0"> Nē!
+                                        <br><br>
+                                    <div><b>Linka novietojums </b><font color="red">*</font>:<br/></div>
+                                        <input type="text" name="link_order"  value="<?php echo $data['link_order']; ?>" size="" /><br/>                                    
                                     <br/>
 
                                     <input type="submit" name="update_main_nav" value="Labot menu" />
@@ -510,15 +510,15 @@ require_once ('config/core.php');
                             </div>                            
                         <?php
                                 }                            
-                        }               
-                        $conn->close();
+                        }                                     
+                        $conn->close();                        
                         if (isset($_POST['update_main_nav'])) 
                         {
                             $name = $_POST['name'];
                             $link = $_POST['link'];
-                            $visible = $_POST['visible'];                            
+                            $visible = $_POST['visible'];                                                       
                             $editTime = time();
-                           
+                                                       
                                 if (empty($name) OR empty($link) OR empty($visible)) 
                                 {
                                     echo "Visiem laukiem jābūt aizpildītiem";
