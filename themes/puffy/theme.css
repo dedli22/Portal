@@ -488,6 +488,8 @@ select{
 }
 
 input[type=text]:focus,
+textarea:focus, 
+select:focus{
 	-moz-box-shadow: 0 0 8px #88D5E9;
 	-webkit-box-shadow: 0 0 8px #88D5E9;
 	box-shadow: 0 0 8px #88D5E9;
