@@ -13,7 +13,7 @@ function page_off($off) {
 }
 
 // manuāli iedodam user id 1 jo datubāzē 1 lietotājs 
-$user_id = 1;
+$user_id = 2;
 $_SESSION['user_id']=$user_id;
 
 

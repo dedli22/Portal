@@ -18,7 +18,11 @@ Just inport portal.sql file in database.
 
 ## UPDATES
 
-  - Fixed main navigation admin panel visiblle function
+  - Fixed main navigation
+  - In admin panel added link visiblle function
   - Updated form styles 
   - Fixed Page offline redirect 
   - Added news text limit 
+  - Added User pages 
+  - styled offline page
+  - Firstname AND lastname show's from user id
