@@ -38,7 +38,7 @@ require_once('config/core.php');
 
 
         <?php
-        if ($_GET['action'] == 'add') {
+        if ($_GET['action'] === 'add') {
         ?>
             <div class="acpContnet">
                 <form action="" method="post">
@@ -82,7 +82,7 @@ require_once('config/core.php');
             }
         }
         // update news version 2 
-        else if ($_GET['action'] == 'edit2') {
+        else if ($_GET['action'] === 'edit2') {
             if (isset($_POST['edit_news'])) {
                 echo '
                             <script type="text/javascript">
